@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-const { data } = await useFetch('/api/foobar')
+const { data: serverData } = await useFetch('/api/foobar')
+
+const query = groq`*[_type == "frontpage"][0]`
+
+const { data, refresh } = useSanityQuery(query)
 
 console.log(data)
 </script>
@@ -7,7 +11,7 @@ console.log(data)
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <h1>{{ data }}</h1>
+    <pre><code>{{ data }}</code></pre>
     <NuxtWelcome />
   </div>
 </template>

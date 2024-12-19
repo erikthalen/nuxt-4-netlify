@@ -5,5 +5,10 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-
+  modules: ['@nuxtjs/sanity'],
+  sanity: {
+    projectId: '8u4j3tvd',
+    dataset: 'production-en',
+    apiVersion: '2024-03-15'
+  }
 })
