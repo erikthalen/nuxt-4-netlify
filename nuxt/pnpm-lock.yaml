@@ -6,9 +6,7 @@ settings:
 
 importers:
 
-  .: {}
-
-  nuxt:
+  .:
     dependencies:
       '@nuxtjs/sanity':
         specifier: 1.13.1
