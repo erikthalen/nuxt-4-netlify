@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -10,5 +12,9 @@ export default defineNuxtConfig({
     projectId: '8u4j3tvd',
     dataset: 'production-en',
     apiVersion: '2024-03-15'
-  }
+  },
+  css: ['~/assets/css/main.css'],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 })

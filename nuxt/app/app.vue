@@ -9,7 +9,7 @@ console.log(data)
 </script>
 
 <template>
-  <div>
+  <div class="bg-amber-200">
     <NuxtRouteAnnouncer />
     <pre><code>{{ data }}</code></pre>
     <NuxtWelcome />
