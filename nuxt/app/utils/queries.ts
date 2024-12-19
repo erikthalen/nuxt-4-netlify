@@ -1,0 +1,1 @@
+export const FRONTPAGE_QUERY = groq`*[_type == "frontpage"][0]`
